@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-xs-12">
+    <div class="card">
+      <div class="card-body">
+        <p class="text-muted">
+              Import time: {{ gif.import_datetime | date:'medium' }}
+        </p>
+        <div class="text-center">
+          <img [src]="gif.images.original.url">
+        </div>
+        <p class="text-muted">
+          {{ gif.username }}
+        </p>
+        <h4>
+          {{ gif.title }} - <span class="badge badge-warning">{{ gif.rating }}</span>
+        </h4>
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
