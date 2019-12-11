@@ -71,4 +71,10 @@ describe('SearchFieldComponent', () => {
         null,
         done);
   });
+
+  it(`should have name as 'Search Field'`, async(() => {
+    const fixture = TestBed.createComponent(SearchFieldComponent);
+    const searchFieldPage = fixture.debugElement.componentInstance;
+    expect(searchFieldPage.name).toEqual('Search Field');
+  }));
 });

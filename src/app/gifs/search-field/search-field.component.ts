@@ -36,7 +36,6 @@ export class SearchFieldComponent implements OnInit {
     async search() {
         if (this.query) {
             this.gifApiService.queryGifs(this.query);
-            console.log(this.gifs$);
         }
     }
 
